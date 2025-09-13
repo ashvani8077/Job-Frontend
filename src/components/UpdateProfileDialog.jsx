@@ -59,14 +59,12 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
         } catch (error) {
             console.log(error);
             toast.error(error.response.data.message);
-        } finally{
+        } finally {
             setLoading(false);
         }
         setOpen(false);
         console.log(input);
     }
-
-
 
     return (
         <div>
@@ -78,7 +76,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                     <form onSubmit={submitHandler}>
                         <div className='grid gap-4 py-4'>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="name" className="text-right">Name</Label>
+                                <Label htmlFor="name" className="text-right text-black">Name</Label> {/* Added text-black */}
                                 <Input
                                     id="name"
                                     name="name"
@@ -89,7 +87,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="email" className="text-right">Email</Label>
+                                <Label htmlFor="email" className="text-right text-black">Email</Label> {/* Added text-black */}
                                 <Input
                                     id="email"
                                     name="email"
@@ -100,7 +98,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="number" className="text-right">Number</Label>
+                                <Label htmlFor="number" className="text-right text-black">Number</Label> {/* Added text-black */}
                                 <Input
                                     id="number"
                                     name="number"
@@ -110,7 +108,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="bio" className="text-right">Bio</Label>
+                                <Label htmlFor="bio" className="text-right text-black">Bio</Label> {/* Added text-black */}
                                 <Input
                                     id="bio"
                                     name="bio"
@@ -120,7 +118,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="skills" className="text-right">Skills</Label>
+                                <Label htmlFor="skills" className="text-right text-black">Skills</Label> {/* Added text-black */}
                                 <Input
                                     id="skills"
                                     name="skills"
@@ -130,7 +128,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="file" className="text-right">Resume</Label>
+                                <Label htmlFor="file" className="text-right text-black">Resume</Label> {/* Added text-black */}
                                 <Input
                                     id="file"
                                     name="file"
